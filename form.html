@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./form.css" />
+  </head>
+  <body>
+    <h1 class="top-heading">رشدانا</h1>
+
+    <form id="my-form" action="#" method="post" name="myForm">
+      <fieldset>
+        <legend>فرم ثبت نام</legend>
+        <label for="first-name">نام</label>
+        <input
+          id="first-name"
+          type="text"
+          name="first-name"
+          pattern="[A-Za-z]{3,}"
+          required
+        />
+        <label for="last-name">نام خانوادگی</label>
+        <input
+          id="last-name"
+          type="text"
+          name="last-name"
+          pattern="[A-Za-z]{3,}"
+          required
+        />
+        <label for="birth-date">تاریخ تولد</label>
+        <input
+          id="birth-date"
+          type="date"
+          name="birth-date"
+          max="2005-01-01"
+          min="1993-01-01"
+          required
+        />
+        <label for="phone">شماره</label>
+        <input id="phone" type="number" name="phone-number" required />
+        <label for="email-address">آدرس ایمیل</label>
+        <input
+          id="email-address"
+          type="text"
+          name="email"
+          placeholder="example@gmail.com"
+          required
+        />
+        <input
+          type="submit"
+          value="ارسال"
+          class="submit"
+          onclick="validateForm()"
+          onclick="input()"
+          onclick="showMassege()"
+        />
+      </fieldset>
+    </form>
+
+    <script src="./form.js" />
+  </body>
+</html>

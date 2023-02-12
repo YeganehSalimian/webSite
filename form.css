@@ -1,0 +1,75 @@
+@font-face {
+  font-family: Yekan;
+  src: url(./assets/font/Yekan.eot) format(eot);
+  src: url(./assets/font/Yekan.ttf) format(ttf);
+  src: url(./assets/font/Yekan.woff) format(woff);
+  src: url(./assets/font/Yekan.woff2) format(woff2);
+}
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Yekan;
+  /* background-image: url(./Moon.svg); */
+  background-color: #0f457b;
+}
+.top-heading {
+  text-align: center;
+  font-size: 50px;
+  color: aliceblue;
+}
+fieldset {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0px;
+  color: antiquewhite;
+  font-size: 30px;
+}
+label {
+  font-size: x-large;
+  color: blanchedalmond;
+}
+input {
+  height: 3rem;
+  width: 20rem;
+}
+.submit {
+  margin-top: 15px;
+  background: #01bc9d;
+  color: white;
+  border-radius: 10px;
+  font-size: 20px;
+  border-color: #01bc9d;
+  height: 40px;
+  width: 150px;
+}
+.submit:hover {
+  background: #0158bc88;
+  border-color: #0158bc88;
+  color: #fff;
+  border-radius: 10px;
+  text-shadow: none;
+}
+@media (max-width: 500px) {
+  fildset {
+    display: flex;
+  }
+  body {
+    background-color: cornflowerblue;
+  }
+  .submit {
+    background-color: darkorange;
+  }
+  .submit:hover {
+    background-color: darkgoldenrod;
+  }
+}
+/* @media (min-width: 800px) {
+  body {
+    background-image: url(./Grid.svg);
+  }
+  .submit {
+    background-color: #c73261;
+  }
+} */
