@@ -19,7 +19,6 @@ function updateClock() {
     h;
   }
 
-
   if (m < 10) {
     m = "0" + m;
   } else {
@@ -37,26 +36,25 @@ function updateClock() {
 updateClock();
 setInterval(updateClock, 1000);
 
-const countersElement = document.querySelectorAll(".counter")
+const countersElement = document.querySelectorAll(".counter");
 
 countersElement.forEach((counterEl) => {
-    counterEl.innerText = "0"
+  counterEl.innerText = "0";
 
-    function updateCounter() {
-        let firstNum = +counterEl.innerText
-        const dataCounter = counterEl.getAttribute("data")
+  function updateCounter() {
+    let firstNum = +counterEl.innerText;
+    const dataCounter = counterEl.getAttribute("data");
 
-        const stepCounter = dataCounter / 21
-        firstNum = Math.ceil(stepCounter + firstNum)
+    const stepCounter = dataCounter / 21;
+    firstNum = Math.ceil(stepCounter + firstNum);
 
-
-        console.log(stepCounter)
-        if (firstNum < dataCounter) {
-            counterEl.innerText = firstNum
-            setTimeout(updateCounter, 60)
-        } else {
-            counterEl.innerText = dataCounter
-        }
+    console.log(stepCounter);
+    if (firstNum < dataCounter) {
+      counterEl.innerText = firstNum;
+      setTimeout(updateCounter, 60);
+    } else {
+      counterEl.innerText = dataCounter;
     }
-    updateCounter()
-})
+  }
+  updateCounter();
+});

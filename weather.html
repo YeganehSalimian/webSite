@@ -10,55 +10,71 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/weather.css" />
+    <link rel="stylesheet" href="./assets/css/weather.css" />
   </head>
   <body>
     <div class="container">
-      <div class="search-box">
+      <form class="search-box">
         <i class="fa-solid fa-location-dot"></i>
         <input type="text" placeholder="Type Your Location" />
-        <button class="fa-solid fa-magnifying-glass"></button>
+        <button class="fa-solid fa-magnifying-glass" type="submit"></button>
+      </form>
+
+      <div class="msgContainer">
+        <span class="formMsg"
+          >There is nothing to see, search for your desired city name to see the
+          results</span
+        >
+        <img src="" class="msgImg" />
       </div>
+
       <div class="not-found">
-        <img src="./images/404.jpg" alt="" />
+        <img src="./images/404.jpg" alt="image" />
         <p>Invalid Location</p>
       </div>
-      <div class="weather-box">
+
+      <!-- <div class="weather-box">
         <img src="" alt="" />
         <p class="temprature"></p>
         <p class="description"></p>
-      </div>
-      <div class="weather-details">
+      </div> -->
+
+      <!-- <div class="weather-details">
         <div class="humidity-details">
           <i class="fa-solid fa-water"></i>
           <div class="text">
             <span></span>
             <p>Humidity</p>
           </div>
-        </div>
-        <div class="wind-details">
+        </div> -->
+
+        <!-- <div class="wind-details">
           <i class="fa-solid fa-wind"></i>
           <div class="text">
             <span></span>
             <p>Wind</p>
           </div>
-        </div>
-        <div class="pressur-details">
+        </div> -->
+
+        <!-- <div class="pressur-details">
           <i class="fa-solid fa-arrow-down-up-across-line"></i>
           <div class="text">
             <span></span>
             <p>Pressur</p>
           </div>
-        </div>
-        <div class="visiblity-details">
+        </div> -->
+
+        <!-- <div class="visiblity-details">
           <i class="fa-solid fa-eye"></i>
           <div class="text">
             <span></span>
             <p>Vesiblity</p>
           </div>
-        </div>
+        </div> -->
+
       </div>
     </div>
-    <script src="./js/script.js"></script>
+
+    <script src="./assets/js/weatherApp.js"></script>
   </body>
 </html>
